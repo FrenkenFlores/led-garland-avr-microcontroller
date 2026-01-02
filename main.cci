@@ -1,0 +1,4 @@
+VERSION:3 SOURCE_TIMESTAMP:5C225C97
+NODE:I LEVEL:0 LINE:23 "C:\cvavr\inc\tiny2313.h"
+NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\delay.h"
+NODE:F LEVEL:0 LINE:29 "main(void)"
