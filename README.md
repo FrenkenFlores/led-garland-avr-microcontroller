@@ -11,6 +11,19 @@ The program should simulate a loop of running lights, pushing the button makes i
 
 ![demo.gif](demo.gif)
 
+## Compile
+The most optimal way is to use the CodeVisionAVR or AVR Studio to build the project, but you can still compile it in Linux. You must install the following libs:
+```bash
+apt-get install avr-libc
+apt-get install gcc-avr
+```
+After installation execute the following commands:
+```bash
+# Create ELF executable
+avr-gcc -mmcu=attiny2313 -Os -DF_CPU=1000000UL -Wall -std=gnu99 -o main.elf main.c
+# Convert it to HEX firmware
+avr-objcopy -O ihex -R .eeprom main.elf main.hex
+```
 
 ## Resources
 - [ATtiny2313](ATTINY2313.pdf)
